@@ -1,8 +1,9 @@
-def fact(n):
+def factorial(n):
     if n <= 1:
-        return 1
+        ans = 1
     else:
-        return fact(n-1)*n
+        ans = factorial(n-1) * n
+        
+    return ans
 
-
-print(fact(int(input())))
+print(factorial(int(input())))
